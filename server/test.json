@@ -1,0 +1,52 @@
+{
+  "implementation": "dfsp-api",
+  "cluster": "dfsp1-test",
+  "repl": false,
+  "console": false,
+  "log": false,
+  "debug": true,
+  "workDir": "./tmp",
+  "masterBus": {
+    "logLevel": "error",
+    "socket": "dfsp-api"
+  },
+  "workerBus": {
+    "logLevel": "error"
+  },
+  "#performance": {
+    "id": "dfsp-api",
+    "influx": {
+      "host": "influxdb",
+      "port": 4444
+    }
+  },
+  "#db": {
+    "logLevel": "trace",
+    "db": {
+      "host": "postgres"
+    },
+    "permission": {
+      "requireSession": true
+    }
+  },
+  "fraudThreshold": {
+    "userScore": 99
+  },
+  "ist": {
+    "url": "http://localhost:8021"
+  },
+  "spsp": {
+    "url": "http://localhost:8021/spspclient"
+  },
+  "tasks": {
+    "scheduleBulkPayments": {
+      "interval": 10,
+      "timeout": 0,
+      "skipPayeeGet": false
+    }
+  },
+  "forensic": {
+      "port": 5678,
+      "host": "127.0.0.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "implementation": "dfsp-api",
+    "repl": false,
+    "console": false,
+    "log": false,
+    "debug": true,
+    "masterBus": {
+        "logLevel": "error",
+        "socket": false
+    },
+    "workerBus": {
+        "logLevel": "error"
+    },
+    "performance": {
+        "id": "dfsp-ussd",
+        "influx": {
+            "host": "influxdb",
+            "port": 4444
+        },
+    "test": true
+    }
+}

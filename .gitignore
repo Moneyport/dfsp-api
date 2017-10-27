@@ -1,0 +1,10 @@
+node_modules
+.vscode
+.idea
+.history
+*.log
+*.marko.js
+dist
+tmp
+.npmrc
+dev

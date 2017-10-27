@@ -1,0 +1,79 @@
+{
+  "name": "@leveloneproject/dfsp-api",
+  "version": "1.0.0-quotes.82",
+  "description": "DFSP Api",
+  "main": "index.js",
+  "scripts": {
+    "changelog": "ut-changelog",
+    "check": "ut-check",
+    "circleci:build": "ut-circleci-build",
+    "circleci:cover": "ut-circleci-cover",
+    "circleci:tag": "ut-circleci-tag",
+    "circleci:push": "ut-circleci-push",
+    "circleci:test": "ut-circleci-test",
+    "cover": "ut-cover",
+    "gitlab": "ut-gitlab",
+    "jenkins": "ut-jenkins",
+    "lint": "ut-lint .",
+    "lint-js": "ut-lint-js .",
+    "pm2": "pm2 start pm2.json",
+    "pm2-show": "pm2 show",
+    "pm2-stop": "pm2 stop pm2.json",
+    "postpublish": "ut-postpublish",
+    "postversion": "ut-postversion",
+    "precommit": "ut-precommit",
+    "prepublish": "ut-prepublish",
+    "prepush": "ut-prepush",
+    "pretest": "ut-pretest",
+    "preversion": "ut-preversion",
+    "release": "ut-release",
+    "start": "node .",
+    "test": "ut-test",
+    "version": "ut-version"
+  },
+  "dependencies": {
+    "joi": "10.4.1",
+    "pm2": "2.5.0",
+    "ut-bus": "^5.12.1",
+    "ut-cache": "^5.6.1",
+    "ut-error": "^5.4.2",
+    "ut-log": "^5.8.1",
+    "ut-port-console": "~6.2.13",
+    "ut-port-http": "^6.4.1",
+    "ut-port-httpserver": "~8.11.4",
+    "ut-port-jsonrpc": "^5.6.4",
+    "ut-port-performance": "^5.4.7",
+    "ut-port-script": "^5.5.1",
+    "ut-run": "^8.1.7",
+    "uuid": "3.1.0",
+    "ut-log-dfsp": "^5.0.12"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "blue-tape": "1.0.0",
+    "tap-xunit": "1.7.0",
+    "ut-tools": "^5.17.26",
+    "babel-istanbul-instrumenter-loader": "^1.0.1",
+    "@leveloneproject/dfsp-directory": "0.x",
+    "@leveloneproject/dfsp-rule": "0.x",
+    "@leveloneproject/dfsp-transfer": "0.x",
+    "@leveloneproject/dfsp-ledger": ">=2.0.0-quotes.28 <2.0.0",
+    "@leveloneproject/dfsp-identity": "0.x",
+    "@leveloneproject/dfsp-account": "0.x",
+    "@leveloneproject/dfsp-subscription": "0.x",
+    "@leveloneproject/dfsp-mock": ">=1.0.0-quotes.25 <1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:LevelOneProject/dfsp-api.git"
+  },
+  "engines": {
+    "node": ">=4.4.7",
+    "npm": ">=3.10.6"
+  },
+  "publishConfig": {
+    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
+  },
+  "author": "Stamen Peev <stamen.peev@softwaregroup-bg.com>",
+  "license": "SEE LICENSE IN LICENSE"
+}
