@@ -1,5 +1,5 @@
 {
-  "name": "@leveloneproject/dfsp-api",
+  "name": "@mojaloop/dfsp-api",
   "version": "1.0.0-quotes.82",
   "description": "DFSP Api",
   "main": "index.js",
@@ -65,7 +65,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:LevelOneProject/dfsp-api.git"
+    "url": "git@github.com:mojaloop/dfsp-api.git"
   },
   "engines": {
     "node": ">=4.4.7",
