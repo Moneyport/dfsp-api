@@ -49,7 +49,7 @@
   },
   "debug": true,
   "tasks": {
-    "_scheduleBulkPayments": {
+    "scheduleBulkPayments": {
       "interval": 10,
       "timeout": 0,
       "skipPayeeGet": false

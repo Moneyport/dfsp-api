@@ -1,6 +1,6 @@
 {
   "name": "@mojaloop/dfsp-api",
-  "version": "1.0.0-quotes.82",
+  "version": "1.0.0",
   "description": "DFSP Api",
   "main": "index.js",
   "scripts": {
@@ -54,14 +54,14 @@
     "tap-xunit": "1.7.0",
     "ut-tools": "^5.17.26",
     "babel-istanbul-instrumenter-loader": "^1.0.1",
-    "@leveloneproject/dfsp-directory": "0.x",
-    "@leveloneproject/dfsp-rule": "0.x",
-    "@leveloneproject/dfsp-transfer": "0.x",
-    "@leveloneproject/dfsp-ledger": ">=2.0.0-quotes.28 <2.0.0",
-    "@leveloneproject/dfsp-identity": "0.x",
-    "@leveloneproject/dfsp-account": "0.x",
-    "@leveloneproject/dfsp-subscription": "0.x",
-    "@leveloneproject/dfsp-mock": ">=1.0.0-quotes.25 <1.0.0"
+    "@mojaloop/dfsp-directory": "0.x",
+    "@mojaloop/dfsp-rule": "0.x",
+    "@mojaloop/dfsp-transfer": "0.x",
+    "@mojaloop/dfsp-ledger": "2.x",
+    "@mojaloop/dfsp-identity": "0.x",
+    "@mojaloop/dfsp-account": "0.x",
+    "@mojaloop/dfsp-subscription": "0.x",
+    "@mojaloop/dfsp-mock": "1.x"
   },
   "repository": {
     "type": "git",
@@ -70,9 +70,6 @@
   "engines": {
     "node": ">=4.4.7",
     "npm": ">=3.10.6"
-  },
-  "publishConfig": {
-    "registry": "https://modusbox.jfrog.io/modusbox/api/npm/level1-npm-release"
   },
   "author": "Stamen Peev <stamen.peev@softwaregroup-bg.com>",
   "license": "Apache-2.0"
