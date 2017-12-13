@@ -17,7 +17,7 @@ Exposed Invoice API is used for:
    * Pending type invoice is used for merchant push payment initiated by the customer. They are not associated with any customer before their actual payment. They are for predefined amount and currency and are created by known merchant user.
    * Product type invoices are used for invoices without associated with them payer. They are created by merchant for predefined amount. They can be paid more than once by same or different users.
 
-The full list with the provided methods is as follow: 
+The full list with the provided methods is as follow:
 
 ### Get Merchant Information  ###
 
@@ -75,7 +75,7 @@ This API will return the information about the merchant by given identifier(user
 ### Create Pending Invoice  ###
 
 This API will create an invoice in the merchant's DFSP associated with the merchant's account and identifier. Thus then the invoice is paid the money will go into the associated account.
-This invoice will not be associated with any client. 
+This invoice will not be associated with any client.
 
 
 ### API Description
@@ -129,10 +129,10 @@ This invoice will not be associated with any client.
        * `status [string] - Invoice status`
        * `merchantIdentifier [string] - Merchant identifier`
        * `invoiceType [string] - Invoice type`
-       * `info [string] - Invoice additional information`  
+       * `info [string] - Invoice additional information`
 
  * **Note** Invoice will be created with status 'pending'
-     
+
 
 * **Sample Response**
 
@@ -154,11 +154,11 @@ This invoice will not be associated with any client.
 
 ### Create Product Invoice ###
 
-This API will create an invoice in the merchant's DFSP associated with the merchant's account and identifier from type 'product'. Thus then the invoice is paid the money will go 
+This API will create an invoice in the merchant's DFSP associated with the merchant's account and identifier from type 'product'. Thus then the invoice is paid the money will go
 into the associated account. This invoice will not be associated with any client and they can be reused many times. This call is pointed to the merchant's DFSP. The rational behind
 this use case is that a merchant should be able to generated some kind of QR or barcode associated with a payment. In the QR code will be encoded and customer should be able to scan
-that QR code and to pay such invoice. This particular call is limited the the creation of invoice from type 'product' and returning the invoice information which on later stage 
-will be used for the generated QR code.  
+that QR code and to pay such invoice. This particular call is limited the the creation of invoice from type 'product' and returning the invoice information which on later stage
+will be used for the generated QR code.
 
 ### API Description
 
@@ -212,10 +212,10 @@ will be used for the generated QR code.
        * `status [string] - Invoice status`
        * `merchantIdentifier [string] - Merchant identifier`
        * `invoiceType [string] - Invoice type`
-       * `info [string] - Invoice additional information`  
+       * `info [string] - Invoice additional information`
 
  * **Note** Invoice will be created with status 'pending'
-     
+
 
 * **Sample Response**
 
@@ -237,7 +237,7 @@ will be used for the generated QR code.
 
 ### Create Standard Invoice ###
 
-This API will create an invoice in the merchant's DFSP associated with the merchant's account and identifier from type 'standard'. Thus then the invoice is paid the money will go 
+This API will create an invoice in the merchant's DFSP associated with the merchant's account and identifier from type 'standard'. Thus then the invoice is paid the money will go
 into the associated account. This type of invoices are assigned to particular client associated with the given identifier.
 
 ### API Description
@@ -295,10 +295,10 @@ into the associated account. This type of invoices are assigned to particular cl
        * `identifier [string] - Client's identifier`
        * `merchantIdentifier [string] - Merchant's identifier`
        * `invoiceType [string] - Invoice type`
-       * `info [string] - Invoice additional information`  
+       * `info [string] - Invoice additional information`
 
  * **Note** Invoice will be created with status 'pending'
-     
+
 
 * **Sample Response**
 
@@ -425,7 +425,7 @@ This API call will return the fees associated with the invoice by invoiceUrl, pa
 
 ### Pay Invoice  ###
 
-This API call will be used by the client's application to request a payment for the invoice. For invoices from type 'standard' and 'pending' upon successful payment, 
+This API call will be used by the client's application to request a payment for the invoice. For invoices from type 'standard' and 'pending' upon successful payment,
 merchant's DFSP will mark the invoice as paid and the merchants application should get an invoice payment notification (outside the scope of the current document).
 For invoices from type 'product' in the merchant's DFSP will be posted payment but invoice will remain 'pending' since it should be reused after this payment from other clients.
 

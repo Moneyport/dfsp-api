@@ -5,13 +5,13 @@ module.exports = {
   client: require('../client'),
   clientConfig: require('../client/test'),
   peerImplementations: [
-    require('@leveloneproject/dfsp-directory'),
-    require('@leveloneproject/dfsp-rule'),
-    require('@leveloneproject/dfsp-transfer'),
-    require('@leveloneproject/dfsp-ledger'),
-    require('@leveloneproject/dfsp-identity'),
-    require('@leveloneproject/dfsp-account'),
-    require('@leveloneproject/dfsp-subscription'),
-    require('@leveloneproject/dfsp-mock')
+    require('@mojaloop/dfsp-directory'),
+    require('@mojaloop/dfsp-rule'),
+    require('@mojaloop/dfsp-transfer'),
+    require('@mojaloop/dfsp-ledger'),
+    require('@mojaloop/dfsp-identity'),
+    require('@mojaloop/dfsp-account'),
+    require('@mojaloop/dfsp-subscription'),
+    require('@mojaloop/dfsp-mock')
   ]
 }

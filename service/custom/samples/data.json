@@ -312,5 +312,265 @@
       "phoneNumber": "255625411852",
       "password": "1234"
     }
+  ],
+  "dfsp1-perf4": [
+    {
+      "firstName": "bob",
+      "lastName": "dylan",
+      "dob": "1999-12-10",
+      "nationalId": "123456789",
+      "accountName": "bob",
+      "balance": 100000,
+      "phoneNumber": "111111111",
+      "password": "1234"
+    },
+    {
+      "firstName": "alice",
+      "lastName": "cooper",
+      "dob": "1989-03-22",
+      "nationalId": "987654321",
+      "accountName": "alice",
+      "balance": 100000,
+      "phoneNumber": "122222222",
+      "password": "1234"
+    },
+    {
+      "firstName": "merchant",
+      "lastName": "one",
+      "dob": "1956-05-13",
+      "nationalId": "147852369",
+      "accountName": "merchant",
+      "balance": 100000,
+      "phoneNumber": "133333333",
+      "password": "1234",
+      "roleName": "merchant"
+    },
+    {
+      "firstName": "agent",
+      "lastName": "agent",
+      "dob": "1956-05-13",
+      "nationalId": "1323333",
+      "phoneNumber": "144444444",
+      "accountName": "agent",
+      "balance": 100000,
+      "password": "1234",
+      "roleName": "agent"
+    },
+    {
+      "firstName": "dfsp1-test",
+      "lastName": "connector",
+      "dob": "1977-09-01",
+      "nationalId": "369852147",
+      "accountName": "dfsp1-testconnector",
+      "balance": 1000000000,
+      "phoneNumber": "155555555",
+      "password": "1234",
+      "accountTypeId": 6
+    },
+    {
+      "firstName": "admin",
+      "lastName": "admin",
+      "dob": "1984-01-01",
+      "nationalId": "333333333",
+      "accountName": "admin",
+      "balance": 100000,
+      "phoneNumber": "166666666",
+      "password": "1234"
+    }
+  ],
+  "dfsp2-perf4": [
+    {
+      "firstName": "bob",
+      "lastName": "dylan",
+      "dob": "1999-12-10",
+      "nationalId": "123456789",
+      "accountName": "bob",
+      "balance": 100000,
+      "phoneNumber": "211111111",
+      "password": "1234"
+    },
+    {
+      "firstName": "alice",
+      "lastName": "cooper",
+      "dob": "1989-03-22",
+      "nationalId": "987654321",
+      "accountName": "alice",
+      "balance": 100000,
+      "phoneNumber": "222222222",
+      "password": "1234"
+    },
+    {
+      "firstName": "merchant",
+      "lastName": "two",
+      "dob": "1956-05-13",
+      "nationalId": "147852369",
+      "accountName": "merchant",
+      "balance": 100000,
+      "phoneNumber": "233333333",
+      "password": "1234",
+      "roleName": "merchant"
+    },
+    {
+      "firstName": "agent",
+      "lastName": "agent",
+      "dob": "1956-05-13",
+      "nationalId": "1323333",
+      "phoneNumber": "244444444",
+      "accountName": "agent",
+      "balance": 100000,
+      "password": "1234",
+      "roleName": "agent"
+    },
+    {
+      "firstName": "dfsp2-test",
+      "lastName": "connector",
+      "dob": "1977-09-01",
+      "nationalId": "369852147",
+      "accountName": "dfsp2-testconnector",
+      "balance": 1000000000,
+      "phoneNumber": "255555555",
+      "password": "1234",
+      "accountTypeId": 6
+    },
+    {
+      "firstName": "admin",
+      "lastName": "admin",
+      "dob": "1984-01-01",
+      "nationalId": "444444444",
+      "accountName": "admin",
+      "balance": 100000,
+      "phoneNumber": "266666666",
+      "password": "1234"
+    }
+  ],
+  "dfsp3-perf4": [
+    {
+      "firstName": "bob",
+      "lastName": "dylan",
+      "dob": "1999-12-10",
+      "nationalId": "123456789",
+      "accountName": "bob",
+      "balance": 100000,
+      "phoneNumber": "311111111",
+      "password": "1234"
+    },
+    {
+      "firstName": "alice",
+      "lastName": "cooper",
+      "dob": "1989-03-22",
+      "nationalId": "987654321",
+      "accountName": "alice",
+      "balance": 100000,
+      "phoneNumber": "322222222",
+      "password": "1234"
+    },
+    {
+      "firstName": "merchant",
+      "lastName": "one",
+      "dob": "1956-05-13",
+      "nationalId": "147852369",
+      "accountName": "merchant",
+      "balance": 100000,
+      "phoneNumber": "333333333",
+      "password": "1234",
+      "roleName": "merchant"
+    },
+    {
+      "firstName": "agent",
+      "lastName": "agent",
+      "dob": "1956-05-13",
+      "nationalId": "1323333",
+      "phoneNumber": "344444444",
+      "accountName": "agent",
+      "balance": 100000,
+      "password": "1234",
+      "roleName": "agent"
+    },
+    {
+      "firstName": "dfsp3-test",
+      "lastName": "connector",
+      "dob": "1977-09-01",
+      "nationalId": "369852147",
+      "accountName": "dfsp3-testconnector",
+      "balance": 1000000000,
+      "phoneNumber": "355555555",
+      "password": "1234",
+      "accountTypeId": 6
+    },
+    {
+      "firstName": "admin",
+      "lastName": "admin",
+      "dob": "1984-01-01",
+      "nationalId": "333333333",
+      "accountName": "admin",
+      "balance": 100000,
+      "phoneNumber": "366666666",
+      "password": "1234"
+    }
+  ],
+  "dfsp4-perf4": [
+    {
+      "firstName": "bob",
+      "lastName": "dylan",
+      "dob": "1999-12-10",
+      "nationalId": "123456789",
+      "accountName": "bob",
+      "balance": 100000,
+      "phoneNumber": "411111111",
+      "password": "1234"
+    },
+    {
+      "firstName": "alice",
+      "lastName": "cooper",
+      "dob": "1989-03-22",
+      "nationalId": "987654321",
+      "accountName": "alice",
+      "balance": 100000,
+      "phoneNumber": "422222222",
+      "password": "1234"
+    },
+    {
+      "firstName": "merchant",
+      "lastName": "two",
+      "dob": "1956-05-13",
+      "nationalId": "147852369",
+      "accountName": "merchant",
+      "balance": 100000,
+      "phoneNumber": "433333333",
+      "password": "1234",
+      "roleName": "merchant"
+    },
+    {
+      "firstName": "agent",
+      "lastName": "agent",
+      "dob": "1956-05-13",
+      "nationalId": "1323333",
+      "phoneNumber": "444444444",
+      "accountName": "agent",
+      "balance": 100000,
+      "password": "1234",
+      "roleName": "agent"
+    },
+    {
+      "firstName": "dfsp4-test",
+      "lastName": "connector",
+      "dob": "1977-09-01",
+      "nationalId": "369852147",
+      "accountName": "dfsp4-testconnector",
+      "balance": 1000000000,
+      "phoneNumber": "455555555",
+      "password": "1234",
+      "accountTypeId": 6
+    },
+    {
+      "firstName": "admin",
+      "lastName": "admin",
+      "dob": "1984-01-01",
+      "nationalId": "444444444",
+      "accountName": "admin",
+      "balance": 100000,
+      "phoneNumber": "466666666",
+      "password": "1234"
+    }
   ]
 }
