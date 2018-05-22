@@ -21,7 +21,9 @@ module.exports = {
           phoneNumber: joi.string().description('phoneNumber').example('0122523365225'),
           accountName: joi.string().description('accountName').example('000000044'),
           password: joi.string().description('password').example('123'),
-          roleName: joi.string().description('roleName').example('customer')
+          roleName: joi.string().description('roleName').example('customer'),
+          balance: joi.string().description('balance').example('100000'),
+          currencyCode: joi.string().description('currencyCode').example('TZS')
         })
       },
       plugins: {
@@ -47,7 +49,9 @@ module.exports = {
         "nationalId": "123654789",
         "phoneNumber": "0122523365225",
         "accountName": "000000044",
-        "password": 123
+        "password": 123,
+        "balance": '100000',
+        "currencyCode" : 'TZS'
       }
     */
     if (passValidation.isWeakPass(msg.password)) {
@@ -91,7 +95,8 @@ module.exports = {
         return this.bus.importMethod('ledger.account.add')({
           balance: msg.balance || 100000,
           name: msg.accountName,
-          accountTypeId: msg.accountTypeId
+          accountTypeId: msg.accountTypeId,
+          currencyCode: msg.currencyCode || 'TZS',
         })
         .then((res) => {
           // {
@@ -102,7 +107,7 @@ module.exports = {
           //   is_disabled: false
           // }
           response.account = res.id
-          response.currency = res.currency
+          response.currencyCode = res.currency
           response.accountNumber = res.accountNumber
           reversals.push({
             method: 'ledger.account.remove',
